@@ -20,14 +20,14 @@ public class TestBase {
 	public static FileInputStream ip;
 
 	static {
-		try {
-			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\akshu\\eclipse-workspace\\myOnlineStore\\src\\main\\java\\com\\myOnlineStore\\qa\\config\\config.properties");
-			prop.load(ip);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	    try {
+	        prop = new Properties();
+	        String path = System.getProperty("user.dir") + "/src/main/java/com/myOnlineStore/qa/config/config.properties";
+	        FileInputStream ip = new FileInputStream(path);
+	        prop.load(ip);
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
 	}
 
 	public static void initialization() {

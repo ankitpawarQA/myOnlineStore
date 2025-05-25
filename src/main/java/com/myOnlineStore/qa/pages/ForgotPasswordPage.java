@@ -5,7 +5,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class ForgotPasswordPage {
 
-	@FindBy(xpath = "//*[@id=\"email\"]")
+	@FindBy(xpath = "//input[@id='email']")
 	public WebElement emailInputFieldOnForgotPassPage;
+	
+	@FindBy(xpath = "//button[@id='send-reset-link']")
+	public WebElement sendReSetLinkBtn;
+	
+	
+	
 
 }

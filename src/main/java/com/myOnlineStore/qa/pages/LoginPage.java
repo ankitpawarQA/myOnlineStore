@@ -15,9 +15,27 @@ public class LoginPage extends TestBase {
 
 	@FindBy(xpath = "//input[@id='field-email']")
 	public WebElement emailInputField;
+	
+	@FindBy(xpath = "//input[@id='field-password']")
+	public WebElement passwordInputField;
+	
+	@FindBy(xpath = "//button[@data-action='show-password']")
+	public WebElement showBtn;
+	
+	
+	
+	@FindBy(xpath = "//a[contains(text(), ' No account? Create one here')]")
+	public WebElement noAccountCreateOneHereLink;
+	
+	
+	
+	
+	
+	
+	
 
 	@FindBy(xpath = "//*[@id=\"login-form\"]/div/div[3]/a")
 	public WebElement forgetPasswordLink;
 
-	// all locators will be added here
+	
 }

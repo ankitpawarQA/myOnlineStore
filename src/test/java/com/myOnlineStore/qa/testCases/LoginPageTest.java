@@ -13,7 +13,7 @@ import com.myOnlineStore.qa.pages.LoginPage;
 
 public class LoginPageTest extends TestBase {
 
-	LoginPage obj = PageFactory.initElements(driver, LoginPage.class);
+	LoginPage obj;
 
 	@BeforeMethod
 	public void setup() {
@@ -27,15 +27,10 @@ public class LoginPageTest extends TestBase {
 
 	@Test
 	public void loginPageTC1() {
-
+		obj = PageFactory.initElements(driver, LoginPage.class);
 		boolean signBtnDispl = obj.signInBtn.isDisplayed();
 		Assert.assertEquals(signBtnDispl, true);
 
-	}
-
-	public void loginPageTC2() {
-		boolean forgotPassLinkDisp = obj.forgetPasswordLink.isDisplayed();
-		Assert.assertEquals(forgotPassLinkDisp, true);
 	}
 
 }

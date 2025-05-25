@@ -23,7 +23,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\Ankit\\eclipse-workspace\\GrowSkillIT\\MyOnlineStoreTest\\src\\main\\java\\com\\myOnlineStore\\qa\\config\\config.properties");
+					"C:\\Users\\akshu\\eclipse-workspace\\myOnlineStore\\src\\main\\java\\com\\myOnlineStore\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (IOException e) {
 			e.printStackTrace();

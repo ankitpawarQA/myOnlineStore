@@ -5,8 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 import com.myOnlineStore.qa.base.TestBase;
 
-public class CreateOnePage extends TestBase {
-
+public class CreateAnAccountPage extends TestBase {
 	@FindBy(xpath = "//input[@id='field-id_gender-1']")
 	public WebElement socailTitleMrBtn;
 

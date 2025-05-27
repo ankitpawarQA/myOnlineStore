@@ -22,20 +22,20 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath = "//button[@data-action='show-password']")
 	public WebElement showBtn;
 	
-	
-	
 	@FindBy(xpath = "//a[contains(text(), ' No account? Create one here')]")
 	public WebElement noAccountCreateOneHereLink;
-	
-	
-	
-	
-	
-	
-	
 
 	@FindBy(xpath = "//*[@id=\"login-form\"]/div/div[3]/a")
 	public WebElement forgetPasswordLink;
+	
+	@FindBy(css="button[id='submit-login']")
+	public WebElement signInBtn1;
+	
+	@FindBy(xpath="//li[@class='alert alert-danger']")
+	public WebElement authErrorMsg;
+	
+	
+	
 
 	
 }

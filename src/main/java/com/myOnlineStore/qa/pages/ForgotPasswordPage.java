@@ -4,6 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class ForgotPasswordPage {
+	
+	@FindBy(xpath = "//a[@href='http://qanextgen.com/practice/liveprojects/p1myonlinestore/en/password-recovery']")
+	public WebElement forgotPasswordLink;
 
 	@FindBy(xpath = "//input[@id='email']")
 	public WebElement emailInputFieldOnForgotPassPage;

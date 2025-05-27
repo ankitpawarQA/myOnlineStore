@@ -20,14 +20,15 @@ public class TestBase {
 	public static FileInputStream ip;
 
 	static {
-	    try {
-	        prop = new Properties();
-	        String path = System.getProperty("user.dir") + "/src/main/java/com/myOnlineStore/qa/config/config.properties";
-	        FileInputStream ip = new FileInputStream(path);
-	        prop.load(ip);
-	    } catch (IOException e) {
-	        e.printStackTrace();
-	    }
+		try {
+			prop = new Properties();
+			String path = System.getProperty("user.dir")
+					+ "/src/main/java/com/myOnlineStore/qa/config/config.properties";
+			FileInputStream ip = new FileInputStream(path);
+			prop.load(ip);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static void initialization() {
@@ -43,12 +44,10 @@ public class TestBase {
 		} else {
 			System.out.println("please enter a browser name in config file");
 		}
-
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
 		driver.get(prop.getProperty("url"));
 
 	}

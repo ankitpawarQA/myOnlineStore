@@ -17,6 +17,7 @@ public class LoginPageTest extends TestBase {
 	@BeforeMethod
 	public void setup() {
 		initialization();
+		obj = PageFactory.initElements(driver, LoginPage.class);
 	}
 
 	@AfterMethod
@@ -26,15 +27,13 @@ public class LoginPageTest extends TestBase {
 
 	@Test(priority = 1)
 	public void loginPageInvalid() {
-		obj = PageFactory.initElements(driver, LoginPage.class);
-
 		boolean signBtnDispl = obj.signInBtn.isDisplayed();
 		Assert.assertEquals(signBtnDispl, true);
 		obj.signInBtn.click();
 
 		boolean emailInputFieldDisp = obj.emailInputField.isDisplayed();
 		Assert.assertEquals(emailInputFieldDisp, true);
-		obj.emailInputField.sendKeys("akshu@gmail.com");
+		obj.emailInputField.sendKeys("ankit@gmail.com");
 
 		boolean passwordInputFieldDisp = obj.passwordInputField.isDisplayed();
 		Assert.assertEquals(passwordInputFieldDisp, true);
@@ -53,9 +52,16 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(signInBtn1Disp, true);
 		obj.signInBtn1.click();
 		Assert.assertEquals(obj.authErrorMsg.isDisplayed(), true);
+		System.out.println("loginPageInvalid :PASS");
 	}
+
+	@Test(priority = 2)
 	public void loginPageValid() {
-		
+		obj.signInBtn.click();
+		obj.emailInputField.sendKeys("ankit.pawar.ankit@gmail.com");
+		obj.passwordInputField.sendKeys("pass@123");
+		obj.signInBtn1.click();
+		System.out.println("loginPageValid: PASS");
 	}
 
 }

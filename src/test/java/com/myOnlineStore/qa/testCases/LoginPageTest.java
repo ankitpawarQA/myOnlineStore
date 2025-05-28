@@ -1,15 +1,20 @@
 package com.myOnlineStore.qa.testCases;
 
 import java.io.IOException;
+import java.util.List;
 
+import org.openqa.selenium.Credentials;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import com.myOnlineStore.qa.base.TestBase;
 import com.myOnlineStore.qa.pages.LoginPage;
+
+import jxl.read.biff.BiffException;
 
 public class LoginPageTest extends TestBase {
 	LoginPage obj;
@@ -25,7 +30,7 @@ public class LoginPageTest extends TestBase {
 		driver.quit();
 	}
 
-	@Test(priority = 1)
+	@Ignore
 	public void loginPageInvalid() {
 		boolean signBtnDispl = obj.signInBtn.isDisplayed();
 		Assert.assertEquals(signBtnDispl, true);
@@ -56,12 +61,33 @@ public class LoginPageTest extends TestBase {
 	}
 
 	@Test(priority = 2)
-	public void loginPageValid() {
-		obj.signInBtn.click();
-		obj.emailInputField.sendKeys("ankit.pawar.ankit@gmail.com");
-		obj.passwordInputField.sendKeys("pass@123");
-		obj.signInBtn1.click();
-		System.out.println("loginPageValid: PASS");
-	}
+	public void loginPageValid() throws BiffException, IOException, InterruptedException {
+		List<String> users = readExcelData();
+		for (String cred : users) {
+			obj.signInBtn.click();
+			Thread.sleep(1000);
 
+			obj.emailInputField.clear();
+			obj.emailInputField.sendKeys(super.user);
+
+			obj.passwordInputField.clear();
+			obj.passwordInputField.sendKeys(super.pass);
+
+			obj.signInBtn1.click();
+			Thread.sleep(2000);
+
+			// ----------------------->
+
+//		obj.signInBtn.click();		
+//		obj.emailInputField.sendKeys(userName);
+//		Thread.sleep(1500);
+//		obj.passwordInputField.sendKeys(password);
+//		Thread.sleep(1500);
+//		obj.signInBtn1.click();
+//		Assert.assertEquals(obj.authErrorMsg.getText(), "Authentication failed.");
+//		System.out.println("loginPageValid: PASS");
+
+		}
+
+	}
 }

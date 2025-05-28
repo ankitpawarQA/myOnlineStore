@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.myOnlineStore.qa.testData.ExcelFileData">
+      <class name="com.myOnlineStore.qa.testCases.LoginPageTest">
         <methods>
-          <include name="readExcel"/>
+          <include name="loginPageValid"/>
+          <include name="setup"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.myOnlineStore.qa.testData.ExcelFileData -->
+      </class> <!-- com.myOnlineStore.qa.testCases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

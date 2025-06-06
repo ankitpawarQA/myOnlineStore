@@ -76,7 +76,7 @@ public class LoginPageTest extends TestBase {
 			obj.signInBtn1.click();
 			Thread.sleep(2000);
 
-			// ----------------------->
+			// -----------------------> Pending for Excel data reading.
 
 //		obj.signInBtn.click();		
 //		obj.emailInputField.sendKeys(userName);
@@ -86,6 +86,8 @@ public class LoginPageTest extends TestBase {
 //		obj.signInBtn1.click();
 //		Assert.assertEquals(obj.authErrorMsg.getText(), "Authentication failed.");
 //		System.out.println("loginPageValid: PASS");
+			
+			
 
 		}
 

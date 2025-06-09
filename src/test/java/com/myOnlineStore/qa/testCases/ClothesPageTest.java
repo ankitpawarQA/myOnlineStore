@@ -32,20 +32,32 @@ public class ClothesPageTest extends TestBase {
 
 	@Test
 	public void validateClothesPage() throws InterruptedException {
+
 		boolean clothesLinkDisp = clothesObj.clothesLink.isDisplayed();
 		Assert.assertEquals(clothesLinkDisp, true);
 
 		Actions ac = new Actions(driver);
+		ac.moveToElement(clothesObj.clothesLink).build().perform();
 
-		ac.moveToElement(clothesObj.menLink).build().perform();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(clothesObj.menLink));
+		wait.until(ExpectedConditions.visibilityOf(clothesObj.womenLink));
 
-		Assert.assertTrue(clothesObj.menLink.isDisplayed(), "Men link is not displayed after hover");
+		boolean menLinkDisp = clothesObj.menLink.isDisplayed();
+		boolean womenLinkDisp = clothesObj.womenLink.isDisplayed();
+		Assert.assertEquals(menLinkDisp, true);
+		Assert.assertEquals(womenLinkDisp, true);
 
+		// click on men link
 		if (clothesObj.menLink.getText().contains("MEN")) {
 			clothesObj.menLink.click();
 			Assert.assertTrue(driver.getTitle().contains("Men"), "Not navigated to Men page");
+		}
+
+		// click on women link
+		ac.moveToElement(clothesObj.clothesLink).build().perform();
+		if (clothesObj.womenLink.getText().contains("WOMEN")) {
+			clothesObj.womenLink.click();
 		}
 
 	}

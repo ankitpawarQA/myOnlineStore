@@ -26,7 +26,7 @@ public class ForgotPasswordPageTest extends TestBase {
 		driver.quit();
 	}
 
-	@Test
+	@Test(groups = { "smoke test" })
 	public void forgotPageTC2() {
 		LoginPageObj.signInBtn.click();
 		String signPageTitle = driver.getTitle();

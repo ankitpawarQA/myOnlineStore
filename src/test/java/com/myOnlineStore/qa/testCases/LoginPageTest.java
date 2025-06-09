@@ -30,7 +30,7 @@ public class LoginPageTest extends TestBase {
 		driver.quit();
 	}
 
-	@Ignore
+	@Test(groups = { "smoke test" } )
 	public void loginPageInvalid() {
 		boolean signBtnDispl = obj.signInBtn.isDisplayed();
 		Assert.assertEquals(signBtnDispl, true);

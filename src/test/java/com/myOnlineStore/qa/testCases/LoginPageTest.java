@@ -30,7 +30,11 @@ public class LoginPageTest extends TestBase {
 		driver.quit();
 	}
 
+<<<<<<< HEAD
 	@Test
+=======
+	@Ignore
+>>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
 	public void loginPageInvalid() {
 		boolean signBtnDispl = obj.signInBtn.isDisplayed();
 		Assert.assertEquals(signBtnDispl, true);
@@ -60,7 +64,11 @@ public class LoginPageTest extends TestBase {
 		System.out.println("loginPageInvalid :PASS");
 	}
 
+<<<<<<< HEAD
 	@Ignore
+=======
+	@Test(priority = 2)
+>>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
 	public void loginPageValid() throws BiffException, IOException, InterruptedException {
 		List<String> users = readExcelData();
 		for (String cred : users) {
@@ -76,7 +84,11 @@ public class LoginPageTest extends TestBase {
 			obj.signInBtn1.click();
 			Thread.sleep(2000);
 
+<<<<<<< HEAD
 			// ----------------------->
+=======
+			// -----------------------> Pending for Excel data reading.
+>>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
 
 //		obj.signInBtn.click();		
 //		obj.emailInputField.sendKeys(userName);
@@ -86,6 +98,11 @@ public class LoginPageTest extends TestBase {
 //		obj.signInBtn1.click();
 //		Assert.assertEquals(obj.authErrorMsg.getText(), "Authentication failed.");
 //		System.out.println("loginPageValid: PASS");
+<<<<<<< HEAD
+=======
+			
+			
+>>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
 
 		}
 

@@ -6,9 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import com.myOnlineStore.qa.base.TestBase;
 
 public class CreateAnAccountPage extends TestBase {
+<<<<<<< HEAD
 	@FindBy(xpath="//div[@class='no-account']")
 	public WebElement createHereLink;
 	
+=======
+>>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
 	@FindBy(xpath = "//input[@id='field-id_gender-1']")
 	public WebElement socailTitleMrBtn;
 

@@ -25,24 +25,22 @@ public class ContactUsPage extends TestBase{
 	@FindBy(xpath = "//span[@class='buttonText']")
 	public WebElement attachmentField;
 	
-<<<<<<< HEAD
+
 	@FindBy(xpath="//span[@class='buttonText']")
 	public WebElement chooseFileBtn;
 	
-=======
->>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
+
 	@FindBy(xpath = "//textarea[@id='contactform-message']")
 	public WebElement messageInputFiled;
 	
 	@FindBy(xpath = "//input[@class='btn btn-primary']")
 	public WebElement sendBtn;	
 	
-<<<<<<< HEAD
+
 	@FindBy(xpath = "//span[normalize-space()='Home']")
 	public WebElement HomeLink;	
 	
-=======
->>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
+
 
 
 	

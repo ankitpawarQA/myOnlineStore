@@ -3,7 +3,6 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="com.myOnlineStore.qa.testCases.ClothesPageTest">
         <methods>
           <include name="teardown"/>
@@ -11,15 +10,6 @@
           <include name="validateClothesPage"/>
         </methods>
       </class> <!-- com.myOnlineStore.qa.testCases.ClothesPageTest -->
-=======
-      <class name="com.myOnlineStore.qa.testCases.LoginPageTest">
-        <methods>
-          <include name="loginPageValid"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.myOnlineStore.qa.testCases.LoginPageTest -->
->>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

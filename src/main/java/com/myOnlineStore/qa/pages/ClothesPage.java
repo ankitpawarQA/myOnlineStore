@@ -7,7 +7,7 @@ import com.myOnlineStore.qa.base.TestBase;
 
 public class ClothesPage extends TestBase{
 	
-	@FindBy(xpath="//li[@id='category-3']")
+	@FindBy(xpath="//a[@class='dropdown-item' and contains(@href,'clothes')]")
 	public WebElement clothesLink;
 	
 	@FindBy(xpath="//li[@id='category-4']/a")

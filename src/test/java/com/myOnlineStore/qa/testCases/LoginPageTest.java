@@ -60,28 +60,4 @@ public class LoginPageTest extends TestBase {
 		System.out.println("loginPageInvalid :PASS");
 	}
 
-
-
-
-	@Test(priority = 2)
-
-	public void loginPageValid() throws BiffException, IOException, InterruptedException {
-		List<String> users = readExcelData();
-		for (String cred : users) {
-			obj.signInBtn.click();
-			Thread.sleep(1000);
-
-			obj.emailInputField.clear();
-			obj.emailInputField.sendKeys(super.user);
-
-			obj.passwordInputField.clear();
-			obj.passwordInputField.sendKeys(super.pass);
-
-			obj.signInBtn1.click();
-			Thread.sleep(2000);
-
-
-		}
-
-	}
 }

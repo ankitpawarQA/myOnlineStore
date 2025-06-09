@@ -61,21 +61,7 @@ public class ContactUsPageTest extends TestBase{
 			
 			boolean sendBtnDisp=contactUsObj.sendBtn.isDisplayed();
 			Assert.assertEquals(sendBtnDisp, true);
-			contactUsObj.sendBtn.click();
-			
-			
-			
-			
-		
-			
-			
-			
-			
-		
-			
-			
-			
-				
+			contactUsObj.sendBtn.click();						
 			
 		}
 		

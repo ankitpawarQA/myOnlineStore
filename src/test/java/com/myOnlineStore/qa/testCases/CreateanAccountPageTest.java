@@ -79,24 +79,5 @@ public class CreateanAccountPageTest extends TestBase {
 		createAccountObj.saveBtn.click();
 		
 		System.out.println("create login page test case is : pass");
-
-	
-	@Test
-	public void createAnAccPage() {
-		obj = PageFactory.initElements(driver, CreateAnAccountPage.class);
-		obj1.noAccountCreateOneHereLink.click();
-		obj.socailTitleMrBtn.click();
-		obj.firstNameInputField.sendKeys("akshu");
-		obj.lastNameInputField.sendKeys("kalia");
-		obj.emailInputField1.sendKeys("ankit@gmail.com");
-		obj.passwordInputField1.sendKeys("java123");
-		obj.birthdateInputFiled.sendKeys("23 may");
-		obj.checkBoxReceiveOffer.click();
-		obj.checkBoxTermsandCondtions.click();
-		obj.checkBoxSignupNews.click();
-		obj.checkBoxCustomerDataPrivacy.click();
-		obj.saveBtn.click();
-
-
 	}
 }

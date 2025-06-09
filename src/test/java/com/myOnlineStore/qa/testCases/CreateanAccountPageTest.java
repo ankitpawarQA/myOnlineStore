@@ -1,10 +1,10 @@
 package com.myOnlineStore.qa.testCases;
 
 import org.openqa.selenium.support.PageFactory;
-<<<<<<< HEAD
+
 import org.testng.Assert;
-=======
->>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
+
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -15,32 +15,32 @@ import com.myOnlineStore.qa.pages.LoginPage;
 
 public class CreateanAccountPageTest extends TestBase {
 
-<<<<<<< HEAD
+
 	CreateAnAccountPage createAccountObj;
 	LoginPage loginPageObj;
-=======
+
 	CreateAnAccountPage obj;
 	LoginPage obj1;
->>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
+
 
 	@BeforeMethod
 	public void setup() {
 		initialization();
-<<<<<<< HEAD
+
 		loginPageObj = PageFactory.initElements(driver, LoginPage.class);
 		loginPageObj.signInBtn.click();
 		createAccountObj = PageFactory.initElements(driver, CreateAnAccountPage.class);
-=======
+
 		obj1 = PageFactory.initElements(driver, LoginPage.class);
 		obj1.signInBtn.click();
->>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
+
 	}
 
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
 	}
-<<<<<<< HEAD
+
 
 	@Test
 	public void createAnAccPage() {
@@ -79,7 +79,7 @@ public class CreateanAccountPageTest extends TestBase {
 		createAccountObj.saveBtn.click();
 		
 		System.out.println("create login page test case is : pass");
-=======
+
 	
 	@Test
 	public void createAnAccPage() {
@@ -96,7 +96,7 @@ public class CreateanAccountPageTest extends TestBase {
 		obj.checkBoxSignupNews.click();
 		obj.checkBoxCustomerDataPrivacy.click();
 		obj.saveBtn.click();
->>>>>>> 7b4d002e6092f2781dfa19697e99911b817d0646
+
 
 	}
 }

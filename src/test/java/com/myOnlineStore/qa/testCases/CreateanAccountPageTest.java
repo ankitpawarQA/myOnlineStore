@@ -4,7 +4,6 @@ import org.openqa.selenium.support.PageFactory;
 
 import org.testng.Assert;
 
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -15,13 +14,11 @@ import com.myOnlineStore.qa.pages.LoginPage;
 
 public class CreateanAccountPageTest extends TestBase {
 
-
 	CreateAnAccountPage createAccountObj;
 	LoginPage loginPageObj;
 
 	CreateAnAccountPage obj;
 	LoginPage obj1;
-
 
 	@BeforeMethod
 	public void setup() {
@@ -41,7 +38,6 @@ public class CreateanAccountPageTest extends TestBase {
 		driver.quit();
 	}
 
-
 	@Test
 	public void createAnAccPage() {
 		boolean createHereLinkDisp = createAccountObj.createHereLink.isDisplayed();
@@ -49,7 +45,7 @@ public class CreateanAccountPageTest extends TestBase {
 		createAccountObj.createHereLink.click();
 
 		createAccountObj.socailTitleMrBtn.click();
-		//createAccountObj.socailTitleMrsBtn.click();
+		// createAccountObj.socailTitleMrsBtn.click();
 
 		createAccountObj.firstNameInputField.sendKeys("akshu");
 		createAccountObj.lastNameInputField.sendKeys("kalia");
@@ -77,7 +73,7 @@ public class CreateanAccountPageTest extends TestBase {
 			createAccountObj.checkBoxCustomerDataPrivacy.click();
 		}
 		createAccountObj.saveBtn.click();
-		
+
 		System.out.println("create login page test case is : pass");
 	}
 }

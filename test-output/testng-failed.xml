@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="smoke test"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.myOnlineStore.qa.testCases.ForgotPasswordPageTest">
+      <class name="com.myOnlineStore.qa.testCases.AddToCartTest">
         <methods>
-          <include name="forgotPageTC2"/>
+          <include name="addItemToCartScenario1"/>
+          <include name="teardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.myOnlineStore.qa.testCases.ForgotPasswordPageTest -->
-      <class name="com.myOnlineStore.qa.testCases.LoginPageTest">
-        <methods>
-          <include name="loginPageInvalid"/>
-        </methods>
-      </class> <!-- com.myOnlineStore.qa.testCases.LoginPageTest -->
+      </class> <!-- com.myOnlineStore.qa.testCases.AddToCartTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

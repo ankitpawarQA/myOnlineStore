@@ -16,5 +16,6 @@
 			<class name="com.myOnlineStore.qa.testCases.CreateanAccountPageTest" />
 			<class name="com.myOnlineStore.qa.testCases.LoginPageTest" />
 		</classes>
+
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

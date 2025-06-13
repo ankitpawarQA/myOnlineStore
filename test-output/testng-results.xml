@@ -1,103 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="0" failed="2" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-09T16:53:04 IST" name="Suite" finished-at="2025-06-09T16:53:04 IST" duration-ms="74">
+  <suite name="Default suite" duration-ms="12480" started-at="2025-06-13T14:24:37 IST" finished-at="2025-06-13T14:24:49 IST">
     <groups>
-      <group name="smoke test">
-        <method signature="ForgotPasswordPageTest.forgotPageTC2()[pri:0, instance:com.myOnlineStore.qa.testCases.ForgotPasswordPageTest@6d763516]" name="forgotPageTC2" class="com.myOnlineStore.qa.testCases.ForgotPasswordPageTest"/>
-        <method signature="LoginPageTest.loginPageInvalid()[pri:0, instance:com.myOnlineStore.qa.testCases.LoginPageTest@515aebb0]" name="loginPageInvalid" class="com.myOnlineStore.qa.testCases.LoginPageTest"/>
-      </group> <!-- smoke test -->
     </groups>
-    <test started-at="2025-06-09T16:53:04 IST" name="Test" finished-at="2025-06-09T16:53:04 IST" duration-ms="74">
-      <class name="com.myOnlineStore.qa.testCases.ForgotPasswordPageTest">
-        <test-method signature="forgotPageTC2()[pri:0, instance:com.myOnlineStore.qa.testCases.ForgotPasswordPageTest@6d763516]" started-at="2025-06-09T16:53:04 IST" name="forgotPageTC2" finished-at="2025-06-09T16:53:04 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot read field "signInBtn" because "this.LoginPageObj" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot read field "signInBtn" because "this.LoginPageObj" is null
-at com.myOnlineStore.qa.testCases.ForgotPasswordPageTest.forgotPageTC2(ForgotPasswordPageTest.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Default test" duration-ms="12480" started-at="2025-06-13T14:24:37 IST" finished-at="2025-06-13T14:24:49 IST">
+      <class name="com.myOnlineStore.qa.testCases.AddToCartTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.myOnlineStore.qa.testCases.AddToCartTest@33723e30]" name="setup" is-config="true" duration-ms="6135" started-at="2025-06-13T14:24:37 IST" finished-at="2025-06-13T14:24:43 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forgotPageTC2 -->
-      </class> <!-- com.myOnlineStore.qa.testCases.ForgotPasswordPageTest -->
-      <class name="com.myOnlineStore.qa.testCases.LoginPageTest">
-        <test-method signature="loginPageInvalid()[pri:0, instance:com.myOnlineStore.qa.testCases.LoginPageTest@515aebb0]" started-at="2025-06-09T16:53:04 IST" name="loginPageInvalid" finished-at="2025-06-09T16:53:04 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot read field "signInBtn" because "this.obj" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot read field "signInBtn" because "this.obj" is null
-at com.myOnlineStore.qa.testCases.LoginPageTest.loginPageInvalid(LoginPageTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addItemToCartScenario1()[pri:0, instance:com.myOnlineStore.qa.testCases.AddToCartTest@33723e30]" name="addItemToCartScenario1" duration-ms="6292" started-at="2025-06-13T14:24:43 IST" finished-at="2025-06-13T14:24:49 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageInvalid -->
-      </class> <!-- com.myOnlineStore.qa.testCases.LoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- addItemToCartScenario1 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myOnlineStore.qa.testCases.AddToCartTest@33723e30]" name="teardown" is-config="true" duration-ms="1" started-at="2025-06-13T14:24:49 IST" finished-at="2025-06-13T14:24:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myOnlineStore.qa.testCases.AddToCartTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

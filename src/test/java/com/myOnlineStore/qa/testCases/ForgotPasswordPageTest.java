@@ -26,8 +26,8 @@ public class ForgotPasswordPageTest extends TestBase {
 		driver.quit();
 	}
 
-	@Test(groups = { "smoke test" })
-	public void forgotPageTC2() {
+	@Test(priority = 3)
+	public void forgotPage() {
 		LoginPageObj.signInBtn.click();
 		String signPageTitle = driver.getTitle();
 
@@ -54,6 +54,6 @@ public class ForgotPasswordPageTest extends TestBase {
 		ForgotPasswordPageObj.forgotPasswordLink.click();
 		ForgotPasswordPageObj.emailInputFieldOnForgotPassPage.sendKeys("akshu@gmail.com");
 		ForgotPasswordPageObj.sendReSetLinkBtn.click();
-		System.out.println("forgotPageTC2: PASS");
+		System.out.println("forgotPage: PASS");
 	}
 }

@@ -1,25 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12480" started-at="2025-06-13T14:24:37 IST" finished-at="2025-06-13T14:24:49 IST">
+  <suite name="Suite" duration-ms="46859" started-at="2025-06-13T14:42:50 IST" finished-at="2025-06-13T14:43:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12480" started-at="2025-06-13T14:24:37 IST" finished-at="2025-06-13T14:24:49 IST">
+    <test name="Test" duration-ms="46859" started-at="2025-06-13T14:42:50 IST" finished-at="2025-06-13T14:43:37 IST">
       <class name="com.myOnlineStore.qa.testCases.AddToCartTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.myOnlineStore.qa.testCases.AddToCartTest@33723e30]" name="setup" is-config="true" duration-ms="6135" started-at="2025-06-13T14:24:37 IST" finished-at="2025-06-13T14:24:43 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.myOnlineStore.qa.testCases.AddToCartTest@4d1b0d2a]" name="setup" is-config="true" duration-ms="3170" started-at="2025-06-13T14:43:03 IST" finished-at="2025-06-13T14:43:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addItemToCartScenario1()[pri:0, instance:com.myOnlineStore.qa.testCases.AddToCartTest@33723e30]" name="addItemToCartScenario1" duration-ms="6292" started-at="2025-06-13T14:24:43 IST" finished-at="2025-06-13T14:24:49 IST">
+        <test-method status="PASS" signature="addItemToCartScenario()[pri:7, instance:com.myOnlineStore.qa.testCases.AddToCartTest@4d1b0d2a]" name="addItemToCartScenario" duration-ms="4242" started-at="2025-06-13T14:43:06 IST" finished-at="2025-06-13T14:43:10 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addItemToCartScenario1 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myOnlineStore.qa.testCases.AddToCartTest@33723e30]" name="teardown" is-config="true" duration-ms="1" started-at="2025-06-13T14:24:49 IST" finished-at="2025-06-13T14:24:49 IST">
+        </test-method> <!-- addItemToCartScenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myOnlineStore.qa.testCases.AddToCartTest@4d1b0d2a]" name="teardown" is-config="true" duration-ms="724" started-at="2025-06-13T14:43:10 IST" finished-at="2025-06-13T14:43:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.myOnlineStore.qa.testCases.AddToCartTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.myOnlineStore.qa.testCases.AccessorisePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.myOnlineStore.qa.testCases.AccessorisePageTest@5c072e3f]" name="setup" is-config="true" duration-ms="3372" started-at="2025-06-13T14:42:59 IST" finished-at="2025-06-13T14:43:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateAccessorisePage()[pri:6, instance:com.myOnlineStore.qa.testCases.AccessorisePageTest@5c072e3f]" name="validateAccessorisePage" duration-ms="40" started-at="2025-06-13T14:43:02 IST" finished-at="2025-06-13T14:43:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAccessorisePage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myOnlineStore.qa.testCases.AccessorisePageTest@5c072e3f]" name="teardown" is-config="true" duration-ms="724" started-at="2025-06-13T14:43:02 IST" finished-at="2025-06-13T14:43:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myOnlineStore.qa.testCases.AccessorisePageTest -->
+      <class name="com.myOnlineStore.qa.testCases.CreateanAccountPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.myOnlineStore.qa.testCases.CreateanAccountPageTest@710726a3]" name="setup" is-config="true" duration-ms="3575" started-at="2025-06-13T14:43:25 IST" finished-at="2025-06-13T14:43:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createAnAccPage()[pri:2, instance:com.myOnlineStore.qa.testCases.CreateanAccountPageTest@710726a3]" name="createAnAccPage" duration-ms="2077" started-at="2025-06-13T14:43:29 IST" finished-at="2025-06-13T14:43:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAnAccPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myOnlineStore.qa.testCases.CreateanAccountPageTest@710726a3]" name="teardown" is-config="true" duration-ms="718" started-at="2025-06-13T14:43:31 IST" finished-at="2025-06-13T14:43:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myOnlineStore.qa.testCases.CreateanAccountPageTest -->
+      <class name="com.myOnlineStore.qa.testCases.ContactUsPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.myOnlineStore.qa.testCases.ContactUsPageTest@149494d8]" name="setup" is-config="true" duration-ms="5587" started-at="2025-06-13T14:43:17 IST" finished-at="2025-06-13T14:43:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="contactUsPage()[pri:4, instance:com.myOnlineStore.qa.testCases.ContactUsPageTest@149494d8]" name="contactUsPage" duration-ms="1646" started-at="2025-06-13T14:43:23 IST" finished-at="2025-06-13T14:43:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUsPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myOnlineStore.qa.testCases.ContactUsPageTest@149494d8]" name="teardown" is-config="true" duration-ms="765" started-at="2025-06-13T14:43:25 IST" finished-at="2025-06-13T14:43:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myOnlineStore.qa.testCases.ContactUsPageTest -->
+      <class name="com.myOnlineStore.qa.testCases.ClothesPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.myOnlineStore.qa.testCases.ClothesPageTest@8e24743]" name="setup" is-config="true" duration-ms="6089" started-at="2025-06-13T14:42:50 IST" finished-at="2025-06-13T14:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateClothesPage()[pri:5, instance:com.myOnlineStore.qa.testCases.ClothesPageTest@8e24743]" name="validateClothesPage" duration-ms="1638" started-at="2025-06-13T14:42:56 IST" finished-at="2025-06-13T14:42:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateClothesPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myOnlineStore.qa.testCases.ClothesPageTest@8e24743]" name="teardown" is-config="true" duration-ms="767" started-at="2025-06-13T14:42:58 IST" finished-at="2025-06-13T14:42:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myOnlineStore.qa.testCases.ClothesPageTest -->
+      <class name="com.myOnlineStore.qa.testCases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.myOnlineStore.qa.testCases.LoginPageTest@646007f4]" name="setup" is-config="true" duration-ms="3127" started-at="2025-06-13T14:43:32 IST" finished-at="2025-06-13T14:43:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginPageInvalid()[pri:1, instance:com.myOnlineStore.qa.testCases.LoginPageTest@646007f4]" name="loginPageInvalid" duration-ms="1355" started-at="2025-06-13T14:43:35 IST" finished-at="2025-06-13T14:43:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageInvalid -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myOnlineStore.qa.testCases.LoginPageTest@646007f4]" name="teardown" is-config="true" duration-ms="764" started-at="2025-06-13T14:43:36 IST" finished-at="2025-06-13T14:43:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myOnlineStore.qa.testCases.LoginPageTest -->
+      <class name="com.myOnlineStore.qa.testCases.ForgotPasswordPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.myOnlineStore.qa.testCases.ForgotPasswordPageTest@954b04f]" name="setup" is-config="true" duration-ms="3123" started-at="2025-06-13T14:43:11 IST" finished-at="2025-06-13T14:43:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="forgotPage()[pri:3, instance:com.myOnlineStore.qa.testCases.ForgotPasswordPageTest@954b04f]" name="forgotPage" duration-ms="2579" started-at="2025-06-13T14:43:14 IST" finished-at="2025-06-13T14:43:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myOnlineStore.qa.testCases.ForgotPasswordPageTest@954b04f]" name="teardown" is-config="true" duration-ms="717" started-at="2025-06-13T14:43:17 IST" finished-at="2025-06-13T14:43:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myOnlineStore.qa.testCases.ForgotPasswordPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

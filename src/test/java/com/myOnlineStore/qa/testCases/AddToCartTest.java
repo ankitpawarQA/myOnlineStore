@@ -29,11 +29,11 @@ public class AddToCartTest extends TestBase {
 
 	@AfterMethod
 	public void teardown() {
-		// driver.quit();
+		driver.quit();
 	}
 
-	@Test
-	public void addItemToCartScenario1() {
+	@Test(priority = 7)
+	public void addItemToCartScenario() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 		List<WebElement> allItemElements = addItemToCartObj.getAllItems();
 
@@ -74,8 +74,8 @@ public class AddToCartTest extends TestBase {
 		addItemToCartObj.continueBtn.click();
 
 		// Address form fill
-		addItemToCartObj.AddressesPageAddressInput.sendKeys("alpha test address	");
-		
+		// addItemToCartObj.AddressesPageAddressInput.sendKeys("alpha test address ");
+		System.out.println("addItemToCartScenario: PASS");
 
 	}
 

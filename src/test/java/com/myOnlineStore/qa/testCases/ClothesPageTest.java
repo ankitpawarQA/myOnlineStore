@@ -30,7 +30,7 @@ public class ClothesPageTest extends TestBase {
 		driver.quit();
 	}
 
-	@Test
+	@Test(priority = 5)
 	public void validateClothesPage() throws InterruptedException {
 
 		boolean clothesLinkDisp = clothesObj.clothesLink.isDisplayed();
@@ -59,6 +59,7 @@ public class ClothesPageTest extends TestBase {
 		if (clothesObj.womenLink.getText().contains("WOMEN")) {
 			clothesObj.womenLink.click();
 		}
+		System.out.println("validateClothesPage: PASS");
 
 	}
 

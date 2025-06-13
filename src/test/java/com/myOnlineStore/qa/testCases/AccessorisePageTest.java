@@ -25,10 +25,11 @@ public class AccessorisePageTest extends TestBase {
 		driver.quit();
 	}
 
-	@Test
+	@Test(priority = 6)
 	public void validateAccessorisePage() {
 		boolean accessoriseLinkDisp = accessoriseObj.accessoriseLink.isDisplayed();
 		Assert.assertEquals(accessoriseLinkDisp, true);
+		System.out.println("validateAccessorisePage: PASS");
 
 	}
 

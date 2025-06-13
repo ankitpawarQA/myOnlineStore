@@ -38,7 +38,7 @@ public class CreateanAccountPageTest extends TestBase {
 		driver.quit();
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void createAnAccPage() {
 		boolean createHereLinkDisp = createAccountObj.createHereLink.isDisplayed();
 		Assert.assertEquals(createHereLinkDisp, true);
@@ -74,6 +74,6 @@ public class CreateanAccountPageTest extends TestBase {
 		}
 		createAccountObj.saveBtn.click();
 
-		System.out.println("create login page test case is : pass");
+		System.out.println("createAnAccPage: PASS");
 	}
 }

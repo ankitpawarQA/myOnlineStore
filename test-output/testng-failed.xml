@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.myOnlineStore.qa.testCases.LoginPageTest">
+      <class name="com.myOnlineStore.qa.testCases.AddToCartTest">
         <methods>
-          <include name="setup"/>
           <include name="teardown"/>
-          <include name="loginPageInvalid"/>
+          <include name="addItemToCartScenario"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.myOnlineStore.qa.testCases.LoginPageTest -->
+      </class> <!-- com.myOnlineStore.qa.testCases.AddToCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

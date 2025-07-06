@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Ignore;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.myOnlineStore.qa.base.TestBase;
@@ -16,6 +17,7 @@ import com.myOnlineStore.qa.pages.LoginPage;
 
 import jxl.read.biff.BiffException;
 
+@Listeners(screenshot.ListnerClass.class)
 public class LoginPageTest extends TestBase {
 	LoginPage obj;
 

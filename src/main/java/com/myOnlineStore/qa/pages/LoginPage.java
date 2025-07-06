@@ -28,7 +28,7 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath = "//*[@id=\"login-form\"]/div/div[3]/a")
 	public WebElement forgetPasswordLink;
 
-	@FindBy(css = "button[id='submit-loginn']")
+	@FindBy(css = "button[id='submit-login']")
 	public WebElement signInBtn1;
 
 	@FindBy(xpath = "//li[@class='alert alert-danger']")

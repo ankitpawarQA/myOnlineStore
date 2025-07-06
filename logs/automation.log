@@ -4,3 +4,32 @@
 2025-07-06 13:42:17 [main] INFO  - product successfully added..
 2025-07-06 13:42:19 [main] INFO  - continue btn is clicked
 2025-07-06 13:42:19 [main] INFO  - ending addItemToCartScenario TC
+2025-07-06 14:30:39 [main] INFO  - starting loginPageInvalid TC
+2025-07-06 14:30:40 [main] INFO  - singin btn displayed and clicked
+2025-07-06 14:30:40 [main] INFO  - email is entered
+2025-07-06 14:30:41 [main] INFO  - password entered and clicked on show button..
+2025-07-06 14:30:56 [main] ERROR - loginPageInvalid TC FAIL
+2025-07-06 14:37:29 [main] INFO  - starting loginPageInvalid TC
+2025-07-06 14:37:29 [main] INFO  - singin btn displayed and clicked
+2025-07-06 14:37:29 [main] INFO  - email is entered
+2025-07-06 14:37:30 [main] INFO  - password entered and clicked on show button..
+2025-07-06 14:37:45 [main] ERROR - loginPageInvalid TC FAIL
+2025-07-06 14:39:46 [main] INFO  - starting addItemToCartScenario TC
+2025-07-06 14:39:48 [main] INFO  - price is verified..
+2025-07-06 14:39:48 [main] INFO  - size is selected..
+2025-07-06 14:39:49 [main] INFO  - product successfully added..
+2025-07-06 14:39:52 [main] INFO  - continue btn is clicked
+2025-07-06 14:39:52 [main] INFO  - ending addItemToCartScenario TC
+2025-07-06 14:40:58 [main] INFO  - starting loginPageInvalid TC
+2025-07-06 14:40:59 [main] INFO  - singin btn displayed and clicked
+2025-07-06 14:40:59 [main] INFO  - email is entered
+2025-07-06 14:41:14 [main] ERROR - loginPageInvalid TC FAIL
+2025-07-06 14:42:30 [main] INFO  - starting loginPageInvalid TC
+2025-07-06 14:42:31 [main] INFO  - singin btn displayed and clicked
+2025-07-06 14:42:31 [main] INFO  - email is entered
+2025-07-06 14:42:38 [main] ERROR - loginPageInvalid TC FAIL
+2025-07-06 14:43:56 [main] INFO  - starting addItemToCartScenario TC
+2025-07-06 14:43:57 [main] INFO  - price is verified..
+2025-07-06 14:43:58 [main] INFO  - size is selected..
+2025-07-06 14:43:59 [main] INFO  - product successfully added..
+2025-07-06 14:44:00 [main] ERROR - addItemToCartScenario TC FAIL

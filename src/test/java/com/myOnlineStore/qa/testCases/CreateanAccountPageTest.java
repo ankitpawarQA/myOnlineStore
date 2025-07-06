@@ -21,8 +21,8 @@ public class CreateanAccountPageTest extends TestBase {
 	LoginPage obj1;
 
 	@BeforeMethod
-	public void setup() {
-		initialization();
+	public void setup(String browser) {
+		initialization(browser);
 
 		loginPageObj = PageFactory.initElements(driver, LoginPage.class);
 		loginPageObj.signInBtn.click();

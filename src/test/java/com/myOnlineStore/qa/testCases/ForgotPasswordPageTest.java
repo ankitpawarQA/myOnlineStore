@@ -15,8 +15,8 @@ public class ForgotPasswordPageTest extends TestBase {
 	LoginPage LoginPageObj;
 
 	@BeforeMethod
-	public void setup() {
-		initialization();
+	public void setup(String browser) {
+		initialization(browser);
 		LoginPageObj = PageFactory.initElements(driver, LoginPage.class);
 		ForgotPasswordPageObj = PageFactory.initElements(driver, ForgotPasswordPage.class);
 	}

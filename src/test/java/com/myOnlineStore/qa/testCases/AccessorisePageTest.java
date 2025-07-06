@@ -15,8 +15,8 @@ public class AccessorisePageTest extends TestBase {
 	Accessorise accessoriseObj;
 
 	@BeforeMethod
-	public void setup() {
-		initialization();
+	public void setup(String browser) {
+		initialization(browser);
 		accessoriseObj = PageFactory.initElements(driver, Accessorise.class);
 	}
 

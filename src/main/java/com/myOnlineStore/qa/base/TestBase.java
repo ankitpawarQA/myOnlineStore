@@ -49,18 +49,13 @@ public class TestBase {
 		}
 	}
 
-	public static void initialization() {
+	public static void initialization(String browserName) {
 
 		logger = LogManager.getLogger(TestBase.class);
 
-		ExtentReports extent = new ExtentReports();
-
-		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
-			// WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browserName.equals("firefox")) {
-			// WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else if (browserName.equals("edge")) {
 			driver = new EdgeDriver();

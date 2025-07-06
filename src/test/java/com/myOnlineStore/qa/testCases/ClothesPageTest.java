@@ -20,8 +20,8 @@ public class ClothesPageTest extends TestBase {
 	ClothesPage clothesObj;
 
 	@BeforeMethod
-	public void setup() {
-		initialization();
+	public void setup(String browser) {
+		initialization(browser);
 		clothesObj = PageFactory.initElements(driver, ClothesPage.class);
 	}
 

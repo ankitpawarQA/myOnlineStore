@@ -12,6 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.myOnlineStore.qa.base.TestBase;
@@ -24,8 +25,9 @@ public class AddToCartTest extends TestBase {
 	AddItemToCart addItemToCartObj;
 
 	@BeforeMethod
-	public void setup() {
-		initialization();
+	@Parameters("browser")
+	public void setup(String browser) {
+		initialization(browser);
 		addItemToCartObj = PageFactory.initElements(driver, AddItemToCart.class);
 	}
 

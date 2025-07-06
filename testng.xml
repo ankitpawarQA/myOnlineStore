@@ -9,8 +9,9 @@
 			<class name="com.myOnlineStore.qa.testCases.ForgotPasswordPageTest" />
 			<class name="com.myOnlineStore.qa.testCases.ContactUsPageTest" />
 			<class name="com.myOnlineStore.qa.testCases.CreateanAccountPageTest" />
-			<class name="com.myOnlineStore.qa.testCases.LoginPageTest" />
+			
 			-->
+			<class name="com.myOnlineStore.qa.testCases.LoginPageTest" />
 			<class name="com.myOnlineStore.qa.testCases.AddToCartTest" />
 		</classes>
 	</test> <!-- Test -->

@@ -33,3 +33,16 @@
 2025-07-06 14:43:58 [main] INFO  - size is selected..
 2025-07-06 14:43:59 [main] INFO  - product successfully added..
 2025-07-06 14:44:00 [main] ERROR - addItemToCartScenario TC FAIL
+2025-07-06 21:29:26 [main] INFO  - starting loginPageInvalid TC
+2025-07-06 21:29:27 [main] INFO  - singin btn displayed and clicked
+2025-07-06 21:29:27 [main] INFO  - email is entered
+2025-07-06 21:29:27 [main] ERROR - loginPageInvalid TC FAIL
+2025-07-06 21:32:52 [main] INFO  - starting loginPageInvalid TC
+2025-07-06 21:32:52 [main] INFO  - singin btn displayed and clicked
+2025-07-06 21:32:52 [main] INFO  - email is entered
+2025-07-06 21:32:52 [main] ERROR - loginPageInvalid TC FAIL
+2025-07-06 21:32:56 [main] INFO  - starting addItemToCartScenario TC
+2025-07-06 21:32:58 [main] INFO  - price is verified..
+2025-07-06 21:32:58 [main] INFO  - size is selected..
+2025-07-06 21:33:00 [main] INFO  - product successfully added..
+2025-07-06 21:33:03 [main] ERROR - addItemToCartScenario TC FAIL

@@ -44,7 +44,7 @@ public class AddItemToCart extends TestBase {
 	@FindBy(xpath = "//a[normalize-space()='Proceed to checkout']")
 	public WebElement proceedToCheckoutBtnFinal;
 
-	@FindBy(xpath = "//*[@id=\"checkout-personal-information-step\"]/h1$")
+	@FindBy(xpath = "//*[@id=\"checkout-personal-information-step\"]/h1$") // bug here
 	public WebElement personalInfoText;
 
 	@FindBy(id = "field-id_gender-1")

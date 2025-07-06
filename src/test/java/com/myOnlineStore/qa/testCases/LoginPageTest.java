@@ -3,7 +3,7 @@ package com.myOnlineStore.qa.testCases;
 import java.io.IOException;
 import java.util.List;
 
-import org.openqa.selenium.Credentials;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;

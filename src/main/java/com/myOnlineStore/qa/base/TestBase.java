@@ -20,6 +20,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.aventstack.extentreports.ExtentReports;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import jxl.Sheet;
 import jxl.Workbook;
@@ -50,6 +52,8 @@ public class TestBase {
 	public static void initialization() {
 
 		logger = LogManager.getLogger(TestBase.class);
+
+		ExtentReports extent = new ExtentReports();
 
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
@@ -88,8 +92,15 @@ public class TestBase {
 		return credentialsList;
 	}
 
-	public void captureScreenshot(String method) throws IOException {
-		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file, new File("C:\\Users\\Ankit\\Desktop\\AUTOMATION DOCS\\screenshots\\ss1.jpg"));
+	public static String captureScreenshot(String methodName) throws IOException {
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+		// Create screenshots directory if not exists
+		String screenshotsDir = System.getProperty("user.dir") + "/screenshots/";
+		new File(screenshotsDir).mkdirs();
+
+		String path = screenshotsDir + methodName + ".png";
+		FileUtils.copyFile(srcFile, new File(path));
+		return path;
 	}
 }

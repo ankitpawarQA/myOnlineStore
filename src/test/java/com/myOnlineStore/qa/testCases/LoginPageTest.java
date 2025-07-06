@@ -32,32 +32,47 @@ public class LoginPageTest extends TestBase {
 
 	@Test(priority = 1)
 	public void loginPageInvalid() {
-		boolean signBtnDispl = obj.signInBtn.isDisplayed();
-		Assert.assertEquals(signBtnDispl, true);
-		obj.signInBtn.click();
 
-		boolean emailInputFieldDisp = obj.emailInputField.isDisplayed();
-		Assert.assertEquals(emailInputFieldDisp, true);
-		obj.emailInputField.sendKeys("ankit@gmail.com");
+		logger.info("starting loginPageInvalid TC");
 
-		boolean passwordInputFieldDisp = obj.passwordInputField.isDisplayed();
-		Assert.assertEquals(passwordInputFieldDisp, true);
+		try {
+			boolean signBtnDispl = obj.signInBtn.isDisplayed();
+			Assert.assertEquals(signBtnDispl, true);
+			obj.signInBtn.click();
+			logger.info("singin btn displayed and clicked");
 
-		boolean showBtnDisp = obj.showBtn.isDisplayed();
-		Assert.assertEquals(showBtnDisp, true);
-		String showBtnText = obj.showBtn.getText();
-		Assert.assertEquals(showBtnText, "SHOW");
+			boolean emailInputFieldDisp = obj.emailInputField.isDisplayed();
+			Assert.assertEquals(emailInputFieldDisp, true);
+			obj.emailInputField.sendKeys("ankit@gmail.com");
+			logger.info("email is entered");
 
-		obj.passwordInputField.sendKeys("welcome@123");
-		obj.showBtn.click();
-		String hideBtnText = obj.showBtn.getText();
-		Assert.assertEquals(hideBtnText, "HIDE");
+			boolean passwordInputFieldDisp = obj.passwordInputField.isDisplayed();
+			Assert.assertEquals(passwordInputFieldDisp, true);
 
-		boolean signInBtn1Disp = obj.signInBtn1.isDisplayed();
-		Assert.assertEquals(signInBtn1Disp, true);
-		obj.signInBtn1.click();
-		Assert.assertEquals(obj.authErrorMsg.isDisplayed(), true);
-		System.out.println("loginPageInvalid :PASS");
+			boolean showBtnDisp = obj.showBtn.isDisplayed();
+			Assert.assertEquals(showBtnDisp, true);
+			String showBtnText = obj.showBtn.getText();
+			Assert.assertEquals(showBtnText, "SHOW");
+
+			obj.passwordInputField.sendKeys("welcome@123");
+			obj.showBtn.click();
+			logger.info("password entered and clicked on show button..");
+			String hideBtnText = obj.showBtn.getText();
+			Assert.assertEquals(hideBtnText, "HIDE");
+
+			boolean signInBtn1Disp = obj.signInBtn1.isDisplayed();
+			Assert.assertEquals(signInBtn1Disp, true);
+			obj.signInBtn1.click();
+			Assert.assertEquals(obj.authErrorMsg.isDisplayed(), true);
+		}
+
+		catch (Exception e) {
+			logger.error("loginPageInvalid TC FAIL");
+			logger.debug("debug logs");
+			Assert.fail();
+		}
+		logger.info("ending loginPageInvalid TC..");
+
 	}
 
 }

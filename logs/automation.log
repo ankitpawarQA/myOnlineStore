@@ -1,0 +1,6 @@
+2025-07-06 13:42:14 [main] INFO  - starting addItemToCartScenario TC
+2025-07-06 13:42:15 [main] INFO  - price is verified..
+2025-07-06 13:42:15 [main] INFO  - size is selected..
+2025-07-06 13:42:17 [main] INFO  - product successfully added..
+2025-07-06 13:42:19 [main] INFO  - continue btn is clicked
+2025-07-06 13:42:19 [main] INFO  - ending addItemToCartScenario TC

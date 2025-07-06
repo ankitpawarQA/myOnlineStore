@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Credentials;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,6 +29,8 @@ public class TestBase {
 	protected String user;
 	protected String pass;
 
+	public static Logger logger;
+
 	static {
 		try {
 			prop = new Properties();
@@ -40,6 +44,9 @@ public class TestBase {
 	}
 
 	public static void initialization() {
+
+		logger = LogManager.getLogger(TestBase.class);
+
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			// WebDriverManager.chromedriver().setup();

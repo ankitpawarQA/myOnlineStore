@@ -3,13 +3,15 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.myOnlineStore.qa.testCases.ClothesPageTest" />
+			<!--	<class name="com.myOnlineStore.qa.testCases.ClothesPageTest" />
 			<class name="com.myOnlineStore.qa.testCases.AccessorisePageTest" />
 			<class name="com.myOnlineStore.qa.testCases.AddToCartTest" />
 			<class name="com.myOnlineStore.qa.testCases.ForgotPasswordPageTest" />
 			<class name="com.myOnlineStore.qa.testCases.ContactUsPageTest" />
 			<class name="com.myOnlineStore.qa.testCases.CreateanAccountPageTest" />
 			<class name="com.myOnlineStore.qa.testCases.LoginPageTest" />
+			-->
+			<class name="com.myOnlineStore.qa.testCases.AddToCartTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
